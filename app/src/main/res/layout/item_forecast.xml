@@ -1,0 +1,71 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:background="@drawable/item_background">
+
+    <!-- Ikona počasí -->
+    <ImageView
+        android:id="@+id/iv_weather_icon"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="Weather Icon"
+        android:background="@drawable/icon_background"
+        android:padding="8dp" />
+
+    <!-- Textové informace -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:gravity="center_vertical">
+
+        <!-- Název města -->
+        <TextView
+            android:id="@+id/tv_city_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="City Name"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Datum a čas -->
+        <TextView
+            android:id="@+id/tv_date_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date Time"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp" />
+
+        <!-- Teplota a popis -->
+        <TextView
+            android:id="@+id/tv_temperature_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Temperature: Description"
+            android:textSize="14sp"
+            android:textColor="#555555" />
+    </LinearLayout>
+
+    <!-- Tlačítko pro odstranění -->
+    <Button
+        android:id="@+id/btn_delete_item"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="8dp"
+        android:backgroundTint="#D32F2F"
+        android:text="Delete"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:padding="8dp" />
+</LinearLayout>
